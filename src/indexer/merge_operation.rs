@@ -44,6 +44,7 @@ pub struct MergeOperation {
     inner: TrackedObject<InnerMergeOperation>,
 }
 
+#[derive(Debug)]
 pub(crate) struct InnerMergeOperation {
     target_opstamp: Opstamp,
     segment_ids: Vec<SegmentId>,
